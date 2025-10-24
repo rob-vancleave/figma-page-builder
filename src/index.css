@@ -354,6 +354,11 @@
     }
   }
 
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
   * {
     border-color: var(--border);
     outline-color: var(--ring);
@@ -365,9 +370,19 @@
     }
   }
 
+  html, body {
+    height: 100%;
+  }
+
   body {
     background-color: var(--background);
     color: var(--foreground);
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    height: 100%;
   }
 
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) h1 {
@@ -1710,6 +1725,14 @@
 
 :root {
   --font-size: 16px;
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
   --background: #fff;
   --foreground: oklch(.145 0 0);
   --card: #fff;
