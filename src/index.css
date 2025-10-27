@@ -117,6 +117,7 @@
     --color-border: #0000001a;
     --color-input: transparent;
     --color-ring: oklch(.708 0 0);
+    --color-input-background: #f3f3f5;
   }
 }
 
@@ -374,6 +375,52 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    margin: calc(var(--spacing) * 0);
+    background-color: var(--color-background);
+    padding: calc(var(--spacing) * 0);
+    color: var(--color-foreground);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h4, p, label, button, input {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  button, label {
+    font-weight: 500;
   }
 }
 
@@ -847,6 +894,10 @@
 
   .bg-destructive {
     background-color: var(--color-destructive);
+  }
+
+  .bg-input-background {
+    background-color: var(--color-input-background);
   }
 
   .bg-primary {
@@ -1680,52 +1731,6 @@
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
   }
-}
-
-* {
-  border-color: #0000001a;
-}
-
-html, body, #root {
-  height: 100%;
-}
-
-body {
-  color: oklch(.145 0 0);
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-h2 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-h4, p, label, button, input {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-button, label {
-  font-weight: 500;
 }
 
 @property --tw-translate-x {
