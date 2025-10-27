@@ -7,7 +7,7 @@ import { Toaster } from "./components/ui/sonner";
 import { Download, Eye } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
 
 interface PageComponent {
   id: string;
